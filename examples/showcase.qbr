@@ -1,0 +1,36 @@
+int n;         
+int result;    
+int threshold; 
+int aux;
+
+write(n);
+
+function ola() {
+    write(10000);
+    return 1
+}
+
+function factorial() { 
+    aux = 1; 
+    
+    repeat 
+        aux = aux * n; 
+        n = n - 1; 
+    until n == 0 
+    
+    return aux
+}
+
+// Programa principal
+result = ola();
+read(n);           // Valor para calcular o fatorial     
+result = factorial();  
+write(result);   
+        
+read(threshold);   // Valor do limite      
+
+if result > threshold then
+    write(1); // Escreve 1 se o fatorial for maior que o limite
+else
+    write(0); // Escreve 0 caso contrário
+end

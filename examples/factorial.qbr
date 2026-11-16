@@ -1,0 +1,27 @@
+int n;         
+    int result;    
+    int threshold; 
+    int aux;
+    function factorial() {
+        
+        aux = 1;
+
+        repeat
+            aux = aux * n;
+            n = n - 1;
+        until n == 0
+
+        return aux
+    }
+
+    // Programa principal
+    read(n);           // Valor para calcular o fatorial            
+    read(threshold);   // Valor do limite    
+    result = factorial();  
+    write(result);         
+
+    if result > threshold then
+        write(1); // Escreve 1 se o fatorial for maior que o limite
+    else
+        write(0); // Escreve 0 caso contrário
+    end
